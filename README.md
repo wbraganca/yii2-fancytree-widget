@@ -2,6 +2,11 @@ yii2-fancytree-widget
 =====================
 The yii2-fancytree-widget is a Yii 2 wrapper for the [Fancytree](http://wwwendt.de/tech/fancytree/demo/). A JavaScript dynamic tree view plugin for jQuery with support for persistence, keyboard, checkboxes, tables, drag'n'drop, and lazy loading.
 
+Note
+======================
+orinal soure file => wbraganca/yii2-fancytree-widget  thank you. 
+this is version i'm solve for my server.
+
 Installation
 ------------
 
