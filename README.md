@@ -15,7 +15,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist wbraganca/yii2-fancytree-widget "*"
+php composer.phar require --prefer-dist prawee/yii2-fancytree-widget "*"
 ```
 
 or add
