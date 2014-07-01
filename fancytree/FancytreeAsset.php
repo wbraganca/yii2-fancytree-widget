@@ -46,7 +46,7 @@ class FancytreeAsset extends \yii\web\AssetBundle
     {
         $this->setSourcePath(__DIR__ . '/../assets');
         $this->setupAssets('css', ['skin-lion/ui.fancytree']);
-        $this->setupAssets('js', ['jquery-ui', 'jquery.fancytree']);
+        $this->setupAssets('js', ['jquery-ui','jquery.fancytree']);
         parent::init();
     }
 
