@@ -21,7 +21,7 @@ php composer.phar require --prefer-dist wbraganca/yii2-fancytree-widget "*"
 or add
 
 ```
-"wbraganca/yii2-fancytree-widget": "*"
+"prawee/yii2-fancytree-widget": "*"
 ```
 
 to the require section of your `composer.json` file.
