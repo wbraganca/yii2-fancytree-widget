@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link      https://github.com/wbraganca/yii2-fancytree-widget
  * @copyright Copyright (c) 2014 Wanderson Bragança
@@ -16,12 +17,13 @@ use yii\helpers\Json;
  *
  * @author Wanderson Bragança <wanderson.wbc@gmail.com>
  */
-class FancytreeWidget extends \yii\base\Widget
-{
+class FancytreeWidget extends \yii\base\Widget {
+
     /**
      * @var array
      */
     public $options = [];
+
     /**
      * @var array
      */
@@ -45,8 +47,7 @@ class FancytreeWidget extends \yii\base\Widget
     /**
      * @inheritdoc
      */
-    public function init()
-    {
+    public function init() {
         parent::init();
         $this->registerAssets();
     }
@@ -54,8 +55,7 @@ class FancytreeWidget extends \yii\base\Widget
     /**
      * Registers the needed assets
      */
-    public function registerAssets()
-    {
+    public function registerAssets() {
         $view = $this->getView();
         $obj = FancytreeAsset::register($view);
         if (isset($this->options['extensions']) && is_array($this->options['extensions'])) {
@@ -71,9 +71,10 @@ class FancytreeWidget extends \yii\base\Widget
             $id = $this->options['id'];
             unset($this->options['id']);
         } else {
-           echo Html::tag('div', '', ['id' => $id]);
+            echo Html::tag('div', '', ['id' => $id]);
         }
         $options = Json::encode($this->options);
-        $view->registerJs('$("#' . $id . '").fancytree( ' .$options .')');
+        $view->registerJs('$("#' . $id . '").fancytree( ' . $options . ')');
     }
+
 }
