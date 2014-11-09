@@ -20,6 +20,6 @@
 		"yiisoft/yii2-jui": "*"
 	},
 	"autoload": {
-		"psr-4": { "wbraganca\\": "" }
+		"psr-4": { "wbraganca\\fancytree\\": "" }
 	}
 }

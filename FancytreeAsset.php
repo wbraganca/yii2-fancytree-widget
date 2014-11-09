@@ -19,6 +19,7 @@ class FancytreeAsset extends \yii\web\AssetBundle
      */
     public $depends = [
         'yii\web\JqueryAsset',
+        'yii\jui\JuiAsset'
     ];
 
     /**
@@ -44,9 +45,9 @@ class FancytreeAsset extends \yii\web\AssetBundle
      */
     public function init()
     {
-        $this->setSourcePath(__DIR__ . '/../assets');
+        $this->setSourcePath(__DIR__ . '/assets');
         $this->setupAssets('css', ['skin-lion/ui.fancytree']);
-        $this->setupAssets('js', ['http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui', 'jquery.fancytree']);
+        $this->setupAssets('js', ['jquery.fancytree']);
         parent::init();
     }
 
