@@ -17,7 +17,8 @@
 	],
 	"require": {
 		"yiisoft/yii2": "*",
-		"yiisoft/yii2-jui": "*"
+		"yiisoft/yii2-jui": "*",
+		"bower-asset/fancytree": "*"
 	},
 	"autoload": {
 		"psr-4": { "wbraganca\\fancytree\\": "" }

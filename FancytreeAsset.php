@@ -14,6 +14,9 @@ namespace wbraganca\fancytree;
  */
 class FancytreeAsset extends \yii\web\AssetBundle
 {
+    public $sourcePath = '@bower/fancytree';
+    public $skin = 'dist/skin-lion/ui.fancytree';
+
     /**
      * @inheritdoc
      */
@@ -45,20 +48,9 @@ class FancytreeAsset extends \yii\web\AssetBundle
      */
     public function init()
     {
-        $this->setSourcePath(__DIR__ . '/assets');
-        $this->setupAssets('css', ['skin-lion/ui.fancytree']);
-        $this->setupAssets('js', ['jquery.fancytree']);
+        $this->setupAssets('css', [$this->skin]);
+        $this->setupAssets('js', ['dist/jquery.fancytree-all']);
         parent::init();
     }
 
-    /**
-     * Sets the source path if empty
-     * @param string $path the path to be set
-     */
-    protected function setSourcePath($path)
-    {
-        if (empty($this->sourcePath)) {
-            $this->sourcePath = $path;
-        }
-    }
 }

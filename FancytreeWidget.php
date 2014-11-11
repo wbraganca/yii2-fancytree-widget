@@ -22,25 +22,6 @@ class FancytreeWidget extends \yii\base\Widget
      * @var array
      */
     public $options = [];
-    /**
-     * @var array
-     */
-    private $extensions = [
-        'childcounter' => 'src/jquery.fancytree.childcounter.js',
-        'clones' => 'src/jquery.fancytree.clones.js',
-        'columnview' => 'src/jquery.fancytree.columnview.js',
-        'debug' => 'src/jquery.fancytree.debug.js',
-        'dnd' => 'src/jquery.fancytree.dnd.js',
-        'edit' => 'src/jquery.fancytree.edit.js',
-        'filter' => 'src/jquery.fancytree.filter.js',
-        'glyph' => 'src/jquery.fancytree.glyph.js',
-        'gridnav' => 'src/jquery.fancytree.gridnav.js',
-        'menu' => 'src/jquery.fancytree.menu.js',
-        'persist' => 'src/jquery.fancytree.persist.js',
-        'table' => 'src/jquery.fancytree.table.js',
-        'themeroller' => 'src/jquery.fancytree.themeroller.js',
-        'wide' => 'src/jquery.fancytree.wide.js'
-    ];
 
     /**
      * @inheritdoc
@@ -57,15 +38,7 @@ class FancytreeWidget extends \yii\base\Widget
     public function registerAssets()
     {
         $view = $this->getView();
-        $obj = FancytreeAsset::register($view);
-        if (isset($this->options['extensions']) && is_array($this->options['extensions'])) {
-            foreach ($this->options['extensions'] as $extension) {
-                if (isset($this->extensions[$extension])) {
-                    $obj->js[] = $this->extensions[$extension];
-                }
-            }
-        }
-
+        FancytreeAsset::register($view);
         $id = 'fancyree_' . $this->id;
         if (isset($this->options['id'])) {
             $id = $this->options['id'];
