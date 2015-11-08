@@ -1,0 +1,27 @@
+build
+docs
+vendor
+
+# cache directories
+Thumbs.db
+*.DS_Store
+*.empty
+
+#phpstorm project files
+.idea
+
+#netbeans project files
+nbproject
+
+#eclipse, zend studio, aptana or other eclipse like project files
+.buildpath
+.project
+.settings
+
+# composer itself is not needed
+composer.phar
+composer.lock
+
+# mac deployment helpers
+switch
+index
