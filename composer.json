@@ -24,7 +24,7 @@
 	"require": {
 		"yiisoft/yii2": "*",
 		"yiisoft/yii2-jui": "*",
-		"bower-asset/fancytree": "~v2.12"
+		"bower-asset/fancytree": ">=2.12"
 	},
 	"autoload": {
 		"psr-4": {
