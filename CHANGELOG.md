@@ -3,6 +3,7 @@ yii2-fancytree-widget change Log
 
 dev-master
 ----------
+- Enh: Fixed register script
 
 
 version 1.0.1

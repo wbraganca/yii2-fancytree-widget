@@ -40,13 +40,15 @@ class FancytreeWidget extends \yii\base\Widget
         $view = $this->getView();
         FancytreeAsset::register($view);
         $id = 'fancyree_' . $this->id;
+
         if (isset($this->options['id'])) {
             $id = $this->options['id'];
             unset($this->options['id']);
         } else {
            echo Html::tag('div', '', ['id' => $id]);
         }
+
         $options = Json::encode($this->options);
-        $view->registerJs('$("#' . $id . '").fancytree( ' .$options .')');
+        $view->registerJs("\n\$(\"#{$id}\").fancytree({$options});\n");
     }
 }
