@@ -1,7 +1,13 @@
 {
 	"name": "wbraganca/yii2-fancytree-widget",
 	"description": "The yii2-fancytree widget is a Yii 2 wrapper for the [Fancytree](https://github.com/mar10/fancytree). A JavaScript dynamic tree view plugin for jQuery with support for persistence, keyboard, checkboxes, tables, drag'n'drop, and lazy loading",
-	"keywords": ["yii2", "extension", "widget", "fancytree", "treeview"],
+	"keywords": [
+		"yii2",
+		"wbraganca",
+		"fancytree",
+		"treeview",
+		"yii2-fancytree-widget"
+	],
 	"type": "yii2-extension",
 	"license": "BSD-3-Clause",
 	"support": {
@@ -18,9 +24,17 @@
 	"require": {
 		"yiisoft/yii2": "*",
 		"yiisoft/yii2-jui": "*",
-		"bower-asset/fancytree": "*"
+		"bower-asset/fancytree": "~v2.12"
 	},
 	"autoload": {
-		"psr-4": { "wbraganca\\fancytree\\": "" }
+		"psr-4": {
+			"wbraganca\\fancytree\\": "src"
+		}
+	},
+	"extra": {
+		"asset-installer-paths": {
+			"npm-asset-library": "vendor/npm",
+			"bower-asset-library": "vendor/bower"
+		}
 	}
 }
