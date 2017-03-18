@@ -39,7 +39,7 @@ class FancytreeWidget extends \yii\base\Widget
     {
         $view = $this->getView();
         FancytreeAsset::register($view);
-        $id = 'fancyree_' . $this->id;
+        $id = 'fancytree_' . $this->id;
 
         if (isset($this->options['id'])) {
             $id = $this->options['id'];
