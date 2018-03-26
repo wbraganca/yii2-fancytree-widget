@@ -14,7 +14,7 @@ namespace wbraganca\fancytree;
  */
 class FancytreeAsset extends \yii\web\AssetBundle
 {
-    public $sourcePath = '@bower/fancytree';
+    public $sourcePath = '@bower/jquery.fancytree';
     public $skin = 'dist/skin-lion/ui.fancytree';
 
     /**
